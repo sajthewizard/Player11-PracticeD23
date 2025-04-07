@@ -1,0 +1,9 @@
+.chobi{
+    background-image: url(../../bg-shadow.png);
+    background-size: cover; /* Scales the image to cover the entire element */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px; /* Sets the height to 100% of the viewport height */
+    margin: 0;
+    color: black;
+}
