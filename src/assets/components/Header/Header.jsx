@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from '../../../assets/logo.png'
-const Header = () => {
+import logo from '../../../assets/logo.png';
+import { BsCoin } from "react-icons/bs";
+const Header = ({coins}) => {
     return (
         <div>
            <div className='flex justify-between m-2 p-2'> 
@@ -24,12 +25,13 @@ const Header = () => {
                     Schedule
                 </h1>
               </div>
-                <div>
-                    <button>Coin
-                        
-                    </button>
+                
+                <kbd className="kbd kbd-xl flex gap-2"><p>{coins}  Coin</p> <span className='mt-2'><BsCoin className='mb-2' /></span></kbd>
+                     
+
+                   
 </div>
-            </div>
+          
            </div>
 
             

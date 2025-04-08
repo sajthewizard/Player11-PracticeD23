@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Virat Kohli",
+        "country": "India",
+        "price": 150000,
+        "image": "https://i.ibb.co/gFhpcXd2/licensed-image.jpg",
+        "position": "Batsman",
+        "runs": 12000,
+        "wickets": 0
+    },
+    {
+        "id": 2,
+        "name": "Kane Williamson",
+        "country": "New Zealand",
+        "price": 120000,
+        "image": "https://i.ibb.co/nqGSbsxv/download.webp",
+        "position": "Batsman",
+        "runs": 7000,
+        "wickets": 0
+    },
+    {
+        "id": 3,
+        "name": "Pat Cummins",
+        "country": "Australia",
+        "price": 110000,
+        "image": "https://i.ibb.co/JWtFrxQq/download-2.webp",
+        "position": "Bowler",
+        "runs": 500,
+        "wickets": 200
+    },
+    {
+        "id": 4,
+        "name": "Ben Stokes",
+        "country": "England",
+        "price": 140000,
+        "image": "https://i.ibb.co/RpDdfvHP/images.webp",
+        "position": "All-Rounder",
+        "runs": 4500,
+        "wickets": 150
+    },
+    {
+        "id": 5,
+        "name": "Babar Azam",
+        "country": "Pakistan",
+        "price": 130000,
+        "image": "https://i.ibb.co/Q3FkrDP9/download-4.webp",
+        "position": "Batsman",
+        "runs": 6000,
+        "wickets": 0
+    },
+    {
+        "id": 6,
+        "name": "Rashid Khan",
+        "country": "Afghanistan",
+        "price": 10.0,
+        "image": "https://i.ibb.co/F455FGGp/download-3.webp",
+        "position": "Bowler",
+        "runs": 1000,
+        "wickets": 300
+    },
+    {
+        "id": 7,
+        "name": "Jos Buttler",
+        "country": "England",
+        "price": 120000,
+        "image": "https://i.ibb.co/hrmCkPV/download.jpg",
+        "position": "Wicketkeeper",
+        "runs": 5000,
+        "wickets": 0
+    },
+    {
+        "id": 8,
+        "name": "Jasprit Bumrah",
+        "country": "India",
+        "price": 110000,
+        "image": "https://i.ibb.co/MD7mJMTy/download-1.webp",
+        "position": "Bowler",
+        "runs": 400,
+        "wickets": 250
+    }
+]

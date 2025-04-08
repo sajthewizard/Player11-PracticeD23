@@ -1,4 +1,5 @@
 .chobi{
+
     background-image: url(../../bg-shadow.png);
     background-size: cover; /* Scales the image to cover the entire element */
     background-repeat: no-repeat;

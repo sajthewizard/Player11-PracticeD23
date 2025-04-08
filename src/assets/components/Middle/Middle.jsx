@@ -1,7 +1,7 @@
 import React from 'react';
 import './Middle.css';
 import logo from '../../banner-main.png'
-const Middle = () => {
+const Middle = ({coinHandler}) => {
     return (
         <div className='chobi  content-center justify-items-center '>
          <div>
@@ -13,7 +13,7 @@ const Middle = () => {
          <h1 className='text-2xl text-purple-900'>
             Beyond Boundaries Beyond Limit
          </h1>
-         <button className="btn btn-dash btn-accent mt-4">Claim Your Coin</button>
+         <button className="btn btn-dash btn-accent mt-4" onClick={()=>coinHandler(600000)}>Claim Your Coin</button>
         </div>
     );
 };
