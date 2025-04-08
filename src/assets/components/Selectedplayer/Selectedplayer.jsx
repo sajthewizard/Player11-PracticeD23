@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaTrash } from "react-icons/fa";
 
-const Selectedplayer = ({player}) => {
+const Selectedplayer = ({player,handleDelete}) => {
     console.log(player)
     return (
 
@@ -11,8 +11,9 @@ const Selectedplayer = ({player}) => {
         <h1 className='text-2xl'>{player.name}</h1>
         <p>{player.position}</p>
     </div>
-    <div>
-       <button><FaTrash /></button>
+    <div className='flex'>
+        <img src={player.image} className='h-16 w-16 rounded-b-full mr-16' alt="" />
+       <button onClick={()=>handleDelete(player.id)}><FaTrash /></button>
     </div>
    
   </div>

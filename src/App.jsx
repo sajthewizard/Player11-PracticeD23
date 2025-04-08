@@ -20,6 +20,11 @@ function App() {
 const [boughtPlayers,setboughtPlayers]=useState([])
 const [error,setError]=useState(false)
 const handleBuy=(player)=>{
+  for (const players of boughtPlayers){
+    if(players.id==player.id){
+      return
+    }
+  }
   if (player.price>coins){
     setError(true)
   return
@@ -32,8 +37,10 @@ setCoins(coins-player.price)
 
   }
 }
-
-
+const handleDelete=(id)=>{
+   const newplayers=boughtPlayers.filter(player=>player.id!==id)
+   setboughtPlayers(newplayers)
+}
   return (
     <>
     <div className='w-7xl mx-auto'>
@@ -67,9 +74,9 @@ setCoins(coins-player.price)
         </div>        
       </div>
       {
-        (view)?<Selected boughtPlayers={boughtPlayers}></Selected>:<Available handleBuy={handleBuy}></Available>
+        (view)?<Selected handleDelete={handleDelete} boughtPlayers={boughtPlayers}></Selected>:<Available boughtPlayers={boughtPlayers} handleBuy={handleBuy}></Available>
       }
-    
+    <FloatingSection></FloatingSection>
       <Footer></Footer>
 
     </div>

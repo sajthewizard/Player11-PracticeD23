@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Player from './Player/Player';
 
-const Available = ({handleBuy}) => {
+const Available = ({handleBuy,boughtPlayers}) => {
     const [players,setPlayers]=useState([])
     useEffect(()=>{
         fetch('player.json')
@@ -13,6 +13,7 @@ const Available = ({handleBuy}) => {
            {
             players.map(player=><Player 
                 handleBuy={handleBuy}
+                boughtPlayers={boughtPlayers}
                 player={player} 
             ></Player>)
            }

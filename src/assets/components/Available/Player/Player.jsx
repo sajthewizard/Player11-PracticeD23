@@ -3,7 +3,7 @@ import { IoIosMan } from "react-icons/io";
 import { CiFlag1 } from "react-icons/ci";
 
 
-const Player = ({player,handleBuy}) => {
+const Player = ({player,handleBuy,boughtPlayers}) => {
     const{ country,image,name, position, price, wickets,runs}=player
     return (
         <div className="card bg-base-200 w-96 shadow-sm">
@@ -31,7 +31,9 @@ const Player = ({player,handleBuy}) => {
     <h2>Wickets: {wickets}</h2>
     <h1 className='text-xl'>Price: ${price}</h1>
     <div className="card-actions justify-end">
-      <button onClick={()=>handleBuy(player)} className="btn btn-primary">Buy Now</button>
+     {
+        (boughtPlayers.length!==6)&&<button  onClick={()=>handleBuy(player)} className="btn btn-primary">Buy Now</button>
+     } 
     </div>
   </div>
             

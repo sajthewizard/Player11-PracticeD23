@@ -13,7 +13,7 @@ const Middle = ({coinHandler}) => {
          <h1 className='text-2xl text-purple-900'>
             Beyond Boundaries Beyond Limit
          </h1>
-         <button className="btn btn-dash btn-accent mt-4" onClick={()=>coinHandler(600000)}>Claim Your Coin</button>
+         <button className="btn btn-dash btn-accent mt-4" onClick={()=>coinHandler(60000)}>Claim Your Coin</button>
         </div>
     );
 };
