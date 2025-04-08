@@ -4,8 +4,8 @@ import amage from '../../logo-footer.png'
 const Footer = () => {
     return (
         < div className=' bg-neutral-300'>
-      <div className='flex justify-center'>
-      <img className='' src={amage} alt="" />
+      <div className='flex justify-center '>
+      <img className='mt-24' src={amage} alt="" />
       </div>
         <footer className="footer sm:footer-horizontal text-base-content p-10">
        
