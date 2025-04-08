@@ -1,9 +1,13 @@
 import React from 'react';
+import Selectedplayer from '../Selectedplayer/Selectedplayer';
 
-const Selected = () => {
+const Selected = ({boughtPlayers}) => {
+    
     return (
         <div>
-            Selected player comes here
+           {
+            boughtPlayers.map(player=><Selectedplayer player={player}></Selectedplayer>)
+           }
         </div>
     );
 };

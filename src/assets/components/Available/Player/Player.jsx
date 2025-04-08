@@ -3,12 +3,12 @@ import { IoIosMan } from "react-icons/io";
 import { CiFlag1 } from "react-icons/ci";
 
 
-const Player = ({player}) => {
+const Player = ({player,handleBuy}) => {
     const{ country,image,name, position, price, wickets,runs}=player
     return (
         <div className="card bg-base-200 w-96 shadow-sm">
              <figure>
-    <img className='h-52 w-56' 
+    <img className='h-52 w-full m-2' 
       src={image}
       alt="Shoes" />
   </figure>
@@ -31,7 +31,7 @@ const Player = ({player}) => {
     <h2>Wickets: {wickets}</h2>
     <h1 className='text-xl'>Price: ${price}</h1>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button onClick={()=>handleBuy(player)} className="btn btn-primary">Buy Now</button>
     </div>
   </div>
             
